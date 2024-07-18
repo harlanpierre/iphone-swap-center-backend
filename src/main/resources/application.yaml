@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: iphone-swap-center-backend
+  devtools:
+    restart:
+      #enabled: false
+      enabled: true
+  flyway:
+    enabled: true
+    user: ${DB_USER}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+    #sql-migration-prefix: postgres
+
+
+server:
+  port: 8080
+
+

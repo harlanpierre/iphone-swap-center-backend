@@ -1,0 +1,12 @@
+services:
+
+  postgres:
+    container_name: postgres
+    environment:
+      POSTGRES_DB: database_iphone_swap_center
+      POSTGRES_USER: db_user
+      POSTGRES_PASSWORD: db_password
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    restart: always
