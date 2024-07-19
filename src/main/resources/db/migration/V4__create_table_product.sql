@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS product (
      create_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
      update_at TIMESTAMP,
      user_id UUID NOT NULL,
-     user_update_id UUID NOT NULL,
+     user_update_id UUID,
      company_id UUID NOT NULL,
      CONSTRAINT fk_product_user FOREIGN KEY(user_id) REFERENCES "user"(id),
      CONSTRAINT fk_product_user_update FOREIGN KEY(user_update_id) REFERENCES "user"(id),

@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS client (
     create_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_at TIMESTAMP,
     user_id UUID NOT NULL,
-    user_update_id UUID NOT NULL,
+    user_update_id UUID,
     address_id UUID NOT NULL,
     company_id UUID NOT NULL,
     CONSTRAINT fk_client_user FOREIGN KEY(user_id) REFERENCES "user"(id),
